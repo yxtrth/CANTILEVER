@@ -1,0 +1,135 @@
+/* Old school website footer styles */
+.footer {
+  background: linear-gradient(45deg, #c0c0c0, #808080);
+  border-top: 3px ridge #666;
+  padding: 0;
+  margin-top: auto;
+  font-family: 'Times New Roman', serif;
+}
+
+.footer-container {
+  background-color: #f0f0f0;
+  border: 2px inset #c0c0c0;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Table styling for retro look */
+.footer table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  background-color: #c0c0c0;
+  border: 2px outset #c0c0c0;
+}
+
+.footer td {
+  border: 1px inset #c0c0c0;
+  padding: 8px;
+  vertical-align: top;
+}
+
+/* Old school link styling */
+.footer a {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  color: #551A8B;
+}
+
+.footer a:hover {
+  color: #FF0000;
+  text-decoration: none;
+  background-color: #FFFF00;
+}
+
+/* Retro fonts and colors */
+.footer font {
+  font-family: inherit;
+}
+
+/* Blinking text animation (old school!) */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+blink {
+  animation: blink 1s linear infinite;
+}
+
+/* Marquee styling */
+marquee {
+  background-color: #FF6600;
+  color: white;
+  padding: 5px;
+  border: 1px solid #CC3300;
+}
+
+/* Retro button style */
+.footer input[type="button"], .footer button {
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+  padding: 2px 6px;
+  font-family: 'MS Sans Serif', sans-serif;
+  font-size: 11px;
+}
+
+.footer input[type="button"]:active, .footer button:active {
+  border: 2px inset #c0c0c0;
+}
+
+/* Old school image styling */
+.footer img {
+  border: 1px solid #666;
+  vertical-align: middle;
+}
+
+/* Center tag support */
+center {
+  text-align: center;
+}
+
+/* Retro scrollbar for webkit browsers */
+.footer ::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+.footer ::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px inset #c0c0c0;
+}
+
+.footer ::-webkit-scrollbar-thumb {
+  background: #808080;
+  border: 1px outset #808080;
+}
+
+.footer ::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
+
+/* Responsive design (but keep the retro look) */
+@media (max-width: 768px) {
+  .footer table {
+    font-size: 12px;
+  }
+  
+  .footer font[size="4"] {
+    font-size: 16px !important;
+  }
+  
+  .footer font[size="2"] {
+    font-size: 12px !important;
+  }
+  
+  .footer font[size="1"] {
+    font-size: 10px !important;
+  }
+  
+  marquee {
+    font-size: 10px;
+  }
+}
