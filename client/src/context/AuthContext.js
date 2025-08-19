@@ -75,7 +75,7 @@ export const AuthProvider = ({ children }) => {
     } else {
       dispatch({ type: 'SET_LOADING', payload: false });
     }
-  }, []);
+  }, [state.token]); // Added state.token to dependencies
 
   // Load user
   const loadUser = async () => {

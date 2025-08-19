@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Header.css';
 
@@ -19,7 +19,7 @@ const Header = () => {
           <tr>
             <td align="center" bgcolor="#FF0000">
               <font face="Arial Black" size="6" color="#FFFF00">
-                <blink>*** RETRO BLOG SITE ***</blink>
+                <span className="retro-blink">*** RETRO BLOG SITE ***</span>
               </font>
             </td>
           </tr>
@@ -93,9 +93,9 @@ const Header = () => {
           <tr>
             <td align="center" bgcolor="#FFFF00">
               <font face="Courier New" size="1">
-                <marquee behavior="scroll" direction="left" scrollamount="2">
+                <div className="retro-marquee">
                   *** Welcome to the World Wide Web! *** Best viewed with Netscape Navigator *** 
-                </marquee>
+                </div>
               </font>
             </td>
           </tr>

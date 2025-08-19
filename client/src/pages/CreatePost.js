@@ -108,7 +108,7 @@ const CreatePost = () => {
         tags: tagsArray
       };
 
-      const response = await postService.createPost(postData);
+      await postService.createPost(postData);
       
       toast.success('Post created successfully!');
       navigate('/dashboard');
