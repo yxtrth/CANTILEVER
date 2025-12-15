@@ -88,6 +88,8 @@ code {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .form-control:focus {
